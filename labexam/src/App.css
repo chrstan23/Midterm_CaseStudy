@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
-}
+/* App.css */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+/* Custom Navbar Design */
+.navbar {
+  background-color: #F9DBBD; /* Dark background color */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-nav{  
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.navbar-brand img {
+  width: 100px; /* Adjust the logo size */
+}
+
+.navbar-nav .nav-link {
+  color: #000000; /* Text color */
+  margin-right: 1rem; /* Adjust spacing between nav links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #FF6F61; /* Hover color */
+  text-decoration: underline;
+}
+
+/* Custom Button Design */
+.btn-primary {
+  background-color: #F9DBBD; /* Primary button color */
+  border-color: #F9DBBD;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #c9a580; /* Hover color */
+  border-color: #c9a580;
+}
+
+.btn-lg {
+  padding: 1rem 2rem; /* Adjust button padding */
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+  
+}
+
+img{
+  border-radius: 10%;
 }

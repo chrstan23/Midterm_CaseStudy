@@ -1,0 +1,66 @@
+/* Product.css */
+
+/* Styles for product cards */
+.card {
+  border: 1px solid #ccc; /* Set border to solid */
+  border-radius: 5px;
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn-secondary {
+  background-color: #E6D3A3; /* Blend color */
+  border-color: #E6D3A3; /* Blend color */
+  color: #fff; /* Text color */
+}
+
+.btn-secondary:hover {
+  background-color: #D6C089; /* Blend color on hover */
+  border-color: #D6C089; /* Blend color on hover */
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+  color: #fff;
+  background-color: #E5D7AE;
+  border-color: #9d8d65;
+  box-shadow: 0 0 0 0.2rem 9d8d65(0, 123, 255, 0.5);
+}
+
+.card-footer {
+  background-color: transparent;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+/* Grid layout for products */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 45vh;
+}
+
+.col {
+  flex: 0 0 calc(33.33% - 1rem); /* Adjust the width of each column */
+  margin-bottom: 1rem; /* Add space between rows */
+}
